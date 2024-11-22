@@ -10,6 +10,7 @@ class PlayerController extends Controller
     // display a listing of the resource
     public function index()
     {
+        dump("This is a debug message.");
         $players = Player::all();
         return response()->json($players);
     }
